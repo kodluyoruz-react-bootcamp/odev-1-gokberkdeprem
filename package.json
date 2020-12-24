@@ -4,7 +4,8 @@
   "description": "Kodluyoruz-React-Bootcamp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./dist/app.js",
+    "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/kodluyoruz-react-bootcamp/odev-1-gokberkdeprem/issues"
   },
-  "homepage": "https://github.com/kodluyoruz-react-bootcamp/odev-1-gokberkdeprem#readme"
+  "homepage": "https://github.com/kodluyoruz-react-bootcamp/odev-1-gokberkdeprem#readme",
+  "devDependencies": {
+    "sucrase": "^3.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
